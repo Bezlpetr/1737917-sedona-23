@@ -1,0 +1,56 @@
+.page-header__logo-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-header__image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 32px;
+}
+
+.page-header__image--main {
+  width: 320px;
+  height: 389px;
+  background-image: url("../img/icon/back-mobile.jpg");
+  background-color: $basic-white;
+}
+
+.page-header__image--inner {
+  width: 320px;
+  height: 214px;
+  background-image: url("../img/icon/back-desktop.jpg");
+  background-color: $basic-white;
+}
+
+.page-header__image::before,
+.page-header__image::after {
+  content: "";
+  position: absolute;
+  border-bottom: 26px solid $basic-white;
+  bottom: 0;
+}
+
+.page-header__image::before {
+  border-right: 160px solid transparent;
+  left: 0;
+}
+
+.page-header__image::after {
+  border-left: 160px solid transparent;
+  right: 0;
+}
+
+.page-header__image--text-image-main {
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.page-header__image--text-image-inner {
+  display: block;
+  margin: 0 auto;
+  padding-top: 108px;
+}

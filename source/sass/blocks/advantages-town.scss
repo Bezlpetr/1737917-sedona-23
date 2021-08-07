@@ -1,0 +1,29 @@
+.advantages-town__list {
+  @include reset-list();
+  text-align: left;
+  padding: 35px 20px;
+}
+
+.advantages-town__item {
+  margin-bottom: 26px;
+  padding-left: 50px;
+}
+
+.advantages-town__item--last-item {
+  margin-bottom: 0;
+}
+
+.advantages-town__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: $basic-black;
+  margin-bottom: 16px;
+}
+
+.advantages-town__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: $basic-gray;
+}

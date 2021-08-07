@@ -1,1 +1,27 @@
-// Начните писать стили здесь
+// Global
+@import "global/normalize";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/visually-hidden.scss";
+
+//Blocks
+@import "blocks/page.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/advantages-town.scss";
+@import "blocks/advantages.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/social.scss";
+@import "blocks/button.scss";
+@import "blocks/gallery.scss";
+@import "blocks/presentation.scss";
+@import "blocks/response.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal-success.scss";
+@import "blocks/modal-failure.scss";
