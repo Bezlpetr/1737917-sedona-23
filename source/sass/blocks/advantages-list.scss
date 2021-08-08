@@ -1,0 +1,35 @@
+.advantages-list {
+  @include reset-list();
+}
+
+.advantages-list__item {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  &--contrast {
+    color: $basic-white;
+  }
+}
+
+.advantages-list__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 11px;
+  color: $basic-black;
+
+  &--contrast {
+    color: $basic-white;
+  }
+}
+
+.advantages-list__number {
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.advantages-list__description {
+  margin: 0;
+}

@@ -1,0 +1,42 @@
+.page-footer__wrapper {
+  @include center-wrapper();
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 26px;
+}
+
+.page-footer__map-image {
+  display: block;
+}
+
+.page-footer__map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16.8px;
+    height: 16.8px;
+    background-color: $basic-blue2;
+    border-radius: 50%;
+    top: 161px;
+    left: 146px;
+    border: 5px solid $basic-white;
+  }
+}
+
+.page-footer__hashtag {
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $basic-black;
+  margin-bottom: 33px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

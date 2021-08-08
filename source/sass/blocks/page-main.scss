@@ -1,0 +1,15 @@
+.page-main__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-black;
+  padding: 0 20px;
+  margin-bottom: 26px;
+
+  &--padding-top {
+    padding-top: 4px;
+  }
+}

@@ -1,0 +1,27 @@
+.presentation {
+  padding-top: 32px;
+  padding-bottom: 115px;
+}
+
+.presentation__wrapper {
+  @include center-wrapper();
+  text-align: center;
+}
+
+.presentation__question {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $basic-black;
+  margin-bottom: 27px;
+}
+
+.presentation__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
