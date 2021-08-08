@@ -7,10 +7,10 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-}
 
-.advantages-list__item--contrast {
-  color: $basic-white;
+  &--contrast {
+    color: $basic-white;
+  }
 }
 
 .advantages-list__title {
@@ -19,10 +19,10 @@
   line-height: 26px;
   margin-bottom: 11px;
   color: $basic-black;
-}
 
-.advantages-list__title--contrast {
-  color: $basic-white;
+  &--contrast {
+    color: $basic-white;
+  }
 }
 
 .advantages-list__number {

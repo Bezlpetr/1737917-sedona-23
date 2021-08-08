@@ -13,8 +13,8 @@
   margin-right: 6px;
   justify-content: center;
   align-items: center;
-}
 
-.social__item--last-item {
-  margin: 0;
+  &--last-item {
+    margin: 0;
+  }
 }

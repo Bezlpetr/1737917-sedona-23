@@ -52,16 +52,16 @@
   position: relative;
   font-weight: bold;
   padding-left: 37px;
-}
 
-.gallery__likes::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 21px;
-  background-image: url("../img/icon/like-icon.svg");
-  background-repeat: no-repeat;
-  background-color: $basic-white;
-  bottom: 5px;
-  left: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/icon/like-icon.svg");
+    background-repeat: no-repeat;
+    background-color: $basic-white;
+    bottom: 5px;
+    left: 0;
+  }
 }
