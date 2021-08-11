@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,41 +13,56 @@
     <a class="page-header__logo" href="">
       <img class="page-header__logo-image" src="img/icon/logotype-mobile.svg" width="102" height="84" alt="Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-
       </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--inner-first">
-          <a class="main-nav__link">
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item ">
-          <a class="main-nav__link" href="catalog.html">
-            Фото и видео
-          </a>
-        </li>
-        <li class="main-nav__item ">
-          <a class="main-nav__link" href="form.html">
-            Форма отзыва
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--inner-last">
-          <a class="main-nav__link" href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--inner-first">
+            <a class="main-nav__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item ">
+            <a class="main-nav__link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item ">
+            <a class="main-nav__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--inner-last">
+            <a class="main-nav__link" href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="page-header__image page-header__image--main">
-      <img class="page-header__image--text-image-main" src="../source/img/icon/text-index.svg" width="282" height="214"
-        alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон - отстой">
     </div>
   </header>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   <main class="page-main">
-    <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1 class="page-main__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
     <section class="advantages">
       <header class="advantages__header">
         <h2 class="visually-hidden">
@@ -63,7 +79,7 @@
             <p class="advantages-list__number">— №1 —</p>
             <p class="advantages-list__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="advantages-list__image" src="img/avantages/photo-city.jpg" width="320" height="260"
+          <img class="advantages-list__image" src="img/avantages/photo-city-desktop.jpg" width="800" height="256"
             alt="Фото мотеля">
           <div class="advantages-town">
             <ul class="advantages-town__list">
@@ -100,7 +116,7 @@
             <p class="advantages-list__number">— №2 —</p>
             <p class="advantages-list__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages-list__image" src="img/avantages/photo-bridge.jpg" width="320" height="260"
+          <img class="advantages-list__image" src="img/avantages/photo-bridge-desktop.jpg" width="512" height="256"
             alt="Фото моста дьявола">
         </li>
         <li class="advantages-list__item">
@@ -135,7 +151,7 @@
           Заинтересовались?
         </p>
         <p class="search-hotel__description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="search-hotel__button button">
           Найти гостиницу
@@ -145,7 +161,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__map">
-      <img class="page-footer__map-image" src="../source/img/map/map-mobile.jpg" width="320" height="350"
+      <img class="page-footer__map-image" src="img/map/map-desktop.jpg" width="768" height="350"
         alt="Карта расположения города Седона">
     </div>
     <div class="page-footer__wrapper">

@@ -18,6 +18,12 @@
     position: relative;
     padding-top: 50px;
     padding-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+      padding: 40px 32px 44px;
+      box-sizing: border-box;
+      width: 33.3%;
+    }
   }
 
   &--first-item::before,
@@ -26,6 +32,10 @@
     position: absolute;
     border-top: 16px solid $basic-white;
     top: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--first-item::before {
@@ -33,7 +43,7 @@
     left: 0;
   }
 
-  .advantages__wrapper--first-item::after {
+  &--first-item::after {
     border-right: 160px solid transparent;
     right: 0;
   }
@@ -41,12 +51,26 @@
   &--second-item {
     padding-top: 39px;
     padding-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 43px 36px 41px;
+      order: 2;
+    }
   }
 
   &--inner-item {
     padding-top: 25px;
     padding-bottom: 24px;
     background-color: $basic-light-gray;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 41px 33px;
+      min-height: 256px;
+    }
   }
 
   &--border-bottom {
