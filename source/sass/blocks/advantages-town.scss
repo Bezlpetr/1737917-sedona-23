@@ -2,6 +2,11 @@
   @include reset-list();
   text-align: left;
   padding: 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .advantages-town__item {
@@ -10,6 +15,19 @@
 
   &--last-item {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin: 0;
+    padding: 158px 30px 60px;
+    box-sizing: border-box;
+    width: 33.3%;
+    text-align: center;
+
+    &:nth-child(2) {
+      order: 3;
+    }
   }
 }
 
@@ -21,6 +39,10 @@
   color: $basic-black;
   margin-bottom: 16px;
 
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
   &--house::before {
     content: "";
     position: absolute;
@@ -29,8 +51,19 @@
     background-color: $basic-white;
     background-image: url("../img/icon/icon-house.svg");
     background-repeat: no-repeat;
+    background-position: center;
     bottom: -2px;
     left: -48px;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+      left: 50%;
+      top: 60px;
+      bottom: 0;
+      margin-left: -37.5px;
+      background-size: 75px 72px;
+    }
   }
 
   &--gift::before {
@@ -41,8 +74,19 @@
     background-color: $basic-white;
     background-image: url("../img/icon/icon-gift.svg");
     background-repeat: no-repeat;
+    background-position: center;
     bottom: -1px;
     left: -45px;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+      left: 50%;
+      top: 57px;
+      bottom: 0;
+      margin-left: -32px;
+      background-size: 64px 75px;
+    }
   }
 
   &--burger::before {
@@ -53,8 +97,19 @@
     background-color: $basic-white;
     background-image: url("../img/icon/icon-burger.svg");
     background-repeat: no-repeat;
+    background-position: center;
     bottom: -4px;
     left: -52px;
+
+    @media (min-width: $tablet-width) {
+      width: 76px;
+      height: 67.9px;
+      left: 50%;
+      top: 63px;
+      bottom: 0;
+      margin-left: -38px;
+      background-size: 76px 67.9px;
+    }
   }
 }
 
