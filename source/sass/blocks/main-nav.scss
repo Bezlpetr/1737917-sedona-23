@@ -112,8 +112,20 @@
   background-color: $basic-blue;
   z-index: 1;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: $basic-white;
+    color: $basic-black;
+    box-shadow: none;
+    padding: 16px 20px 14px;
+  }
+
   &--inner-first {
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
+    }
   }
 
   &--inner-last::before {
@@ -146,13 +158,6 @@
       grid-column: 5;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    background-color: $basic-white;
-    color: $basic-black;
-    box-shadow: none;
-  }
 }
 
 .main-nav__link {
@@ -161,6 +166,7 @@
   font-weight: 700;
   line-height: 40px;
   color: $basic-white;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
