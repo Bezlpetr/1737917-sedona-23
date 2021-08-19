@@ -1,5 +1,15 @@
 .modal-success {
   padding-top: 30px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    margin: 0 auto;
+  }
 }
 
 .modal-success__wrapper-button {

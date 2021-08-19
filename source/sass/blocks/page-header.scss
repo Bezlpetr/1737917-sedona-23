@@ -46,6 +46,18 @@
     height: 214px;
     background-image: url("../img/icon/back-mobile-inner.jpg");
     background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/icon/back-desktop-inner.jpg");
+      width: 768px;
+      height: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/icon/back-desktop-inner.jpg");
+      width: 1200px;
+      height: 301px;
+    }
   }
 
   &::before,

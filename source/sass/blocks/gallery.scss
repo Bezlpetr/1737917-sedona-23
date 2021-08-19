@@ -1,33 +1,89 @@
 .gallery__wrapper {
   @include center-wrapper();
+
+  &--description {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto auto;
+      padding: 0 20px;
+      background-color: $basic-blue3;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: $special-black;
+    }
+  }
 }
 
 .gallery__title {
   margin: 0;
-  font-family: 14px;
+  font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 42px;
   text-align: center;
   padding: 0 20px;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
 }
 
 .gallery__list {
   @include reset-list();
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .gallery__item {
+  position: relative;
   margin: 0;
   padding-top: 22px;
   padding-bottom: 15px;
   border-top: 1px solid $basic-light-gray-3;
   border-bottom: 1px solid $basic-light-gray-3;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+  }
 }
 
 .gallery__image {
   display: block;
   width: 100%;
+  object-fit: cover;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .gallery__description {
@@ -40,11 +96,29 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
 
 .gallery__author {
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
 
 .gallery__likes {
@@ -53,15 +127,31 @@
   font-weight: bold;
   padding-left: 37px;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+
   &::before {
     content: "";
     position: absolute;
     width: 23px;
     height: 21px;
-    background-image: url("../img/icon/like-icon.svg");
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='21' viewBox='0 0 23 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z' fill='black'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-color: $basic-white;
     bottom: 5px;
     left: 0;
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='21' viewBox='0 0 23 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z' fill='white'/%3E%3C/svg%3E");
+    }
   }
 }
