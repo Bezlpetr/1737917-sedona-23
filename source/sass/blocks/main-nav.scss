@@ -25,6 +25,10 @@
   right: 20px;
   top: 17px;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   :hover,
   :focus {
     opacity: 0.6;
@@ -32,10 +36,6 @@
 
   :active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 
@@ -53,6 +53,10 @@
   right: 20px;
   top: 17px;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   :hover,
   :focus {
