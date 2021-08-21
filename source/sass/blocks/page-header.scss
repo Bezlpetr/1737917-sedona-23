@@ -1,18 +1,47 @@
 .page-header {
   position: relative;
+
+  // ::before {
+  //   @media (min-width: $desktop-width) {
+  //     content: "";
+  //     position: absolute;
+  //     width: 187px;
+  //     height: 96px;
+  //     background-image: url("../img/icon/logotype_back.svg");
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+  //     top: 0;
+  //     left: 50%;
+  //     margin-left: -93px;
+  //     z-index: 0;
+  //   }
+  // }
 }
 
 .page-header__logo {
   position: absolute;
+  width: 102px;
+  height: 84px;
   top: 0;
   left: 50%;
   margin-left: -51px;
-  z-index: 1;
+  z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+    margin-left: -93px;
+    background-image: url("../img/icon/logotype_back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .page-header__logo-image {
   display: block;
   margin: 0 auto;
+  width: 102px;
+  height: 84px;
 }
 
 .page-header__image {
@@ -32,12 +61,14 @@
       background-image: url("../img/icon/back-tablet.jpg");
       width: 768px;
       height: 518px;
+      margin-bottom: 44px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/icon/back-desktop.jpg");
       width: 1200px;
       height: 518px;
+      margin-bottom: 52px;
     }
   }
 
@@ -62,20 +93,56 @@
 
   &::before,
   &::after {
-    content: "";
-    position: absolute;
-    border-bottom: 26px solid $basic-white;
-    bottom: 0;
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      border-bottom: 26px solid $basic-white;
+      bottom: 0;
+    }
   }
 
   &::before {
-    border-right: 160px solid transparent;
-    left: 0;
+    @media (max-width: $mobile-width-only) {
+      border-right: 160px solid transparent;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 57px;
+      background-image: url("../img/icon/intro-triangle-left.svg");
+      left: 0;
+      bottom: 0;
+    }
   }
 
   &::after {
-    border-left: 160px solid transparent;
-    right: 0;
+    @media (max-width: $mobile-width-only) {
+      border-left: 160px solid transparent;
+      right: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 57px;
+      background-image: url("../img/icon/intro-triangle.svg");
+      left: 0;
+      bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 57px;
+      background-image: url("../img/icon/intro-triangle-right.svg");
+      left: 50%;
+      bottom: 0;
+    }
   }
 
   &--text-image-inner {
