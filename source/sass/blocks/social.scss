@@ -18,7 +18,28 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    margin: 36px 6px 36px 0;
+  }
+
   &--last-item {
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 36px 0;
+    }
   }
+
+  &:hover,
+  &:focus-within {
+    background-color: $basic-dark-blue;
+  }
+
+  &:active {
+    background-color: $basic-dark-blue2;
+  }
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }

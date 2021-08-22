@@ -10,4 +10,13 @@
 .copyright__link {
   text-decoration: none;
   height: auto;
+
+  &:hover .copyright__link-logo > path,
+  &:focus .copyright__link-logo > path {
+    fill: $basic-blue;
+  }
+
+  &:active .copyright__link-logo > path {
+    fill: $special-black;
+  }
 }

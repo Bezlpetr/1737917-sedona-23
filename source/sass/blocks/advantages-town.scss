@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     margin: 0;
-    padding: 158px 30px 60px;
+    padding: 158px 30px 80px;
     box-sizing: border-box;
     width: 33.3%;
     text-align: center;
@@ -41,6 +41,8 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    font-size: 21px;
+    margin-bottom: 22px;
   }
 
   &--house::before {
@@ -118,4 +120,16 @@
   font-size: 14px;
   line-height: 21px;
   color: $basic-gray;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }

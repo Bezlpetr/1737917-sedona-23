@@ -10,4 +10,18 @@
   border: none;
   cursor: pointer;
   margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-dark-blue;
+  }
+
+  &:active {
+    color: $special-white;
+    background-color: $basic-dark-blue2;
+  }
+
+  &:disabled {
+    background-color: $basic-light-gray-3;
+  }
 }
