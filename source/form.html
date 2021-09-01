@@ -47,7 +47,7 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper">
-      <h1 class="page-main__title page-main__title--inner page-main__title--padding-top">Оставьте свой отзыв</h1>
+      <h1 class="page-main__title page-main__title--inner">Оставьте свой отзыв</h1>
       <section class="response">
         <h2 class="visually-hidden">Форма для отправки отзыва</h2>
         <p class="response__title">
@@ -55,54 +55,54 @@
         </p>
         <form class="response__form" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="response__fieldset">
-            <legend class="response__legend response__legend--align-left response__legend--margin">Представьтесь:</legend>
-            <div class="response__wrapper response__wrapper--fist-item-margin">
-              <p class="response__field response__field--margin-left">
+            <legend class="response__legend response__legend--present">Представьтесь:</legend>
+            <div class="response__wrapper response__wrapper--fist-item">
+              <p class="response__field response__field--present">
                 <label class="response__label" for="name">Имя*:</label>
-                <input class="respose__input" type="text" name="name" id="name" placeholder="Петр">
+                <input class="response__input" type="text" name="name" id="name" value="Петр">
               </p>
-              <p class="response__field response__field--margin-left">
+              <p class="response__field response__field--present">
                 <label class="response__label" for="surname">Фамилия*:</label>
-                <input class="respose__input" type="text" name="surname" id="surname" placeholder="Иванов">
+                <input class="response__input" type="text" name="surname" id="surname" value="Иванов">
               </p>
-              <p class="response__field response__field--margin-left response__field--last-item">
+              <p class="response__field response__field--present response__field--last-item">
                 <label class="response__label" for="patronymic">Отчество:</label>
-                <input class="respose__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                <input class="response__input" type="text" name="patronymic" id="patronymic" value="Александрович">
               </p>
             </div>
           </fieldset>
           <fieldset class="response__fieldset">
-            <legend class="response__legend">Контактная информация:</legend>
-            <div class="response__wrapper response__wrapper--second-item response__wrapper--second-item-margin">
+            <legend class="response__legend response__legend--contact">Контактная информация:</legend>
+            <div class="response__wrapper response__wrapper--second-item">
               <p
-                class="response__field response__field--wrap response__field--margin-bottom response__field--icon-phone">
-                <label class="response__label response__label--margin" for="telephone"><span>Контактный </span>телефон*:</label><br>
-                <input class="respose__input respose__input--width respose__input--icon" type="tel" name="telephone" id="telephone"
+                class="response__field response__field--contact response__field--icon-phone">
+                <label class="response__label response__label--contact" for="telephone"><span>Контактный </span>телефон*:</label><br>
+                <input class="response__input response__input--contact response__input--icon" type="tel" name="telephone" id="telephone"
                   placeholder="Введите телефон">
               </p>
-              <p class="response__field response__field--wrap response__field--last-item response__field--icon-email">
-                <label class="response__label response__label--margin" for="email">Электронная почта*:</label><br>
-                <input class="respose__input respose__input--width respose__input--icon" type="email" name="email" id="email"
+              <p class="response__field response__field--contact response__field--last-item response__field--icon-email">
+                <label class="response__label response__label--contact" for="email">Электронная почта*:</label><br>
+                <input class="response__input response__input--contact response__input--icon" type="email" name="email" id="email"
                   placeholder="Введите e-mail">
               </p>
             </div>
           </fieldset>
           <fieldset class="response__fieldset">
-            <legend class="response__legend response__legend--align-left">Ваше общее впечатление:</legend>
-            <div class="response__wrapper response__wrapper--third-item-margin">
+            <legend class="response__legend response__legend--impression">Ваше общее впечатление:</legend>
+            <div class="response__wrapper response__wrapper--third-item">
               <ul class="response__list response__list--third">
-                <li class="response__item response__item--padding">
-                  <input class="visually-hidden respose__input-radio" type="radio" name="impression"
+                <li class="response__item response__item--impression">
+                  <input class="visually-hidden response__input-radio" type="radio" name="impression"
                     id="impression-positive" value="positive" checked>
                   <label class="response__label-radio" for="impression-positive">Скорее положительное</label>
                 </li>
-                <li class="response__item response__item--padding">
-                  <input class="visually-hidden respose__input-radio" type="radio" name="impression"
+                <li class="response__item response__item--impression">
+                  <input class="visually-hidden response__input-radio" type="radio" name="impression"
                     id="impression-negative" value="negative">
                   <label class="response__label-radio" for="impression-negative">Скорее отрицательное</label>
                 </li>
-                <li class="response__item response__item--padding">
-                  <input class="visually-hidden respose__input-radio" type="radio" name="impression"
+                <li class="response__item response__item--impression">
+                  <input class="visually-hidden response__input-radio" type="radio" name="impression"
                     id="impression-indefinite" value="indefinite">
                   <label class="response__label-radio response__label-radio--last-item"
                     for="impression-indefinite">Затрудняюсь ответить</label>
@@ -111,27 +111,27 @@
             </div>
           </fieldset>
           <fieldset class="response__fieldset">
-            <legend class="response__legend response__legend--padding-top">Посещенные<br> достопримечательности:
+            <legend class="response__legend response__legend--sights">Посещенные<br> достопримечательности:
             </legend>
-            <div class="response__wrapper response__wrapper--fourth-item-margin">
+            <div class="response__wrapper response__wrapper--fourth-item">
               <ul class="response__list response__list--fourth">
-                <li class="response__item response__item--margin-left">
-                  <input class="visually-hidden respose__input-checkbox" type="checkbox" name="bridge"
+                <li class="response__item response__item--sights">
+                  <input class="visually-hidden response__input-checkbox" type="checkbox" name="bridge"
                     id="checkbox-bridge" checked>
                   <label class="response__label-checkbox" for="checkbox-bridge">Мост Дьявола</label>
                 </li>
-                <li class="response__item response__item--margin-right">
-                  <input class="visually-hidden respose__input-checkbox" type="checkbox" name="mountain"
+                <li class="response__item response__item--sights">
+                  <input class="visually-hidden response__input-checkbox" type="checkbox" name="mountain"
                     id="checkbox-mountain" checked>
                   <label class="response__label-checkbox" for="checkbox-mountain">Гора-Колокол</label>
                 </li>
-                <li class="response__item response__item--margin-left">
-                  <input class="visually-hidden respose__input-checkbox" type="checkbox" name="park" id="checkbox-park"
+                <li class="response__item response__item--sights">
+                  <input class="visually-hidden response__input-checkbox" type="checkbox" name="park" id="checkbox-park"
                     checked>
                   <label class="response__label-checkbox response__label-checkbox--before-last-item" for="checkbox-park">Слайд-парк</label>
                 </li>
-                <li class="response__item response__item--margin-right">
-                  <input class="visually-hidden respose__input-checkbox" type="checkbox" name="rocks"
+                <li class="response__item response__item--sights">
+                  <input class="visually-hidden response__input-checkbox" type="checkbox" name="rocks"
                     id="checkbox-rocks">
                   <label class="response__label-checkbox response__label-checkbox--last-item" for="checkbox-rocks">Красные
                     скалы</label>
@@ -141,7 +141,7 @@
           </fieldset>
           <fieldset class="response__fieldset">
             <legend class="response__legend">Опишите свои эмоции:</legend>
-            <div class="response__wrapper response__wrapper--fifth-item-margin">
+            <div class="response__wrapper response__wrapper--fifth-item">
               <textarea class="response__textarea" name="emotion" cols="25" rows="5"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
