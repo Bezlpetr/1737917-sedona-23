@@ -1,47 +1,20 @@
 .page-header {
   position: relative;
 
-  // ::before {
-  //   @media (min-width: $desktop-width) {
-  //     content: "";
-  //     position: absolute;
-  //     width: 187px;
-  //     height: 96px;
-  //     background-image: url("../img/icon/logotype_back.svg");
-  //     background-repeat: no-repeat;
-  //     background-position: center;
-  //     top: 0;
-  //     left: 50%;
-  //     margin-left: -93px;
-  //     z-index: 0;
-  //   }
-  // }
-}
+  &--inner {
+    min-height: 214px;
+    margin-bottom: 32px;
 
-.page-header__logo {
-  position: absolute;
-  width: 102px;
-  height: 84px;
-  top: 0;
-  left: 50%;
-  margin-left: -51px;
-  z-index: 2;
+    @media (min-width: $tablet-width) {
+      min-height: 346px;
+      margin-bottom: 65px;
+    }
 
-  @media (min-width: $desktop-width) {
-    width: 187px;
-    height: 96px;
-    margin-left: -93px;
-    background-image: url("../img/icon/logotype_back.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    @media (min-width: $desktop-width) {
+      min-height: 357px;
+      margin-bottom: 114px;
+    }
   }
-}
-
-.page-header__logo-image {
-  display: block;
-  margin: 0 auto;
-  width: 102px;
-  height: 84px;
 }
 
 .page-header__image {
@@ -49,13 +22,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 32px;
 
   &--main {
     width: 320px;
     height: 389px;
     background-image: url("../img/icon/back-mobile.jpg");
     background-color: $basic-white;
+    margin-bottom: 32px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/icon/back-tablet.jpg");
@@ -73,6 +46,10 @@
   }
 
   &--inner {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 320px;
     height: 214px;
     background-image: url("../img/icon/back-mobile-inner.jpg");
@@ -81,13 +58,13 @@
     @media (min-width: $tablet-width) {
       background-image: url("../img/icon/back-desktop-inner.jpg");
       width: 768px;
-      height: 290px;
+      height: 346px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/icon/back-desktop-inner.jpg");
       width: 1200px;
-      height: 301px;
+      height: 357px;
     }
   }
 

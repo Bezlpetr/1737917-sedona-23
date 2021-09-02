@@ -13,10 +13,6 @@
   margin-bottom: 26px;
   padding-left: 50px;
 
-  &--last-item {
-    margin-bottom: 0;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     margin: 0;
@@ -24,8 +20,14 @@
     box-sizing: border-box;
     width: 33.3%;
     text-align: center;
+  }
 
-    &:nth-child(2) {
+  &--last-item {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
       order: 3;
     }
   }

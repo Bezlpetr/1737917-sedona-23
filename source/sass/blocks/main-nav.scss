@@ -1,8 +1,36 @@
 .main-nav {
   position: relative;
-  z-index: 2;
   min-height: 56px;
+  background-color: $basic-white;
+  z-index: 2;
 }
+
+.main-nav__logo {
+  position: absolute;
+  content: "";
+  width: 102px;
+  height: 84px;
+  top: 0;
+  left: 50%;
+  margin-left: -51px;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+    margin-left: -93px;
+    background-image: url("../img/icon/logotype_back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.main-nav__logo-image {
+  display: block;
+  margin: 0 auto;
+  width: 102px;
+  height: 84px;
+}
+
 
 .main-nav__wrapper {
   position: absolute;
@@ -118,7 +146,6 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   mix-blend-mode: normal;
   background-color: $basic-blue;
-  z-index: 1;
 
   &:hover,
   &:focus,
