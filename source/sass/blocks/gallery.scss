@@ -68,7 +68,7 @@
     padding: 0;
   }
 
-  &:nth-child(1) {
+  &:first-child {
     &::before {
       @media (max-width: $mobile-width-only) {
         content: "";
