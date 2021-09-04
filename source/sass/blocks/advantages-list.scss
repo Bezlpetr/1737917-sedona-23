@@ -19,7 +19,7 @@
     color: $basic-white;
   }
 
-  &:nth-child(1) {
+  &:first-child {
     @media (min-width: $tablet-width) {
       grid-column: 1/4;
       grid-row: 1/2;

@@ -6,13 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page-header page-header--inner">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
-        <img class="main-nav__logo-image" src="img/icon/logotype-mobile.png" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/icon/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icon/logotype-tablet.svg">
+          <img class="main-nav__logo-image" src="img/icon/logotype-mobile.svg" width="102" height="84" alt="Седона">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>

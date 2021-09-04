@@ -83,7 +83,7 @@
   margin: 0;
   border: none;
 
-  &:nth-child(1) {
+  &:first-child {
     margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
@@ -297,7 +297,7 @@
   }
 }
 
-.response__field--contact:nth-child(1) {
+.response__field--contact:first-child {
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
