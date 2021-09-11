@@ -1,18 +1,33 @@
 .page-header {
   position: relative;
 
-  &--inner {
+  &--catalog {
     min-height: 214px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
       min-height: 346px;
-      margin-bottom: 65px;
+      margin-bottom: 63px;
     }
 
     @media (min-width: $desktop-width) {
       min-height: 357px;
-      margin-bottom: 114px;
+      margin-bottom: 100px;
+    }
+  }
+
+  &--form {
+    min-height: 214px;
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 346px;
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 357px;
+      margin-bottom: 112px;
     }
   }
 }
@@ -28,7 +43,11 @@
     height: 389px;
     background-image: url("../img/icon/back-mobile.jpg");
     background-color: $basic-white;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon/back-mobile@2x.jpg");
+    }
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/icon/back-tablet.jpg");
@@ -63,19 +82,28 @@
     background-image: url("../img/icon/back-mobile-inner.jpg");
     background-color: $basic-white;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon/back-mobile-inner@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
-      background-image: url("../img/icon/back-desktop-inner.jpg");
+      background-image: url("../img/icon/back-tablet-inner.jpg");
       width: 768px;
       height: 346px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/icon/back-desktop-inner@2x.jpg");
+        background-image: url("../img/icon/back-tablet-inner@2x.jpg");
       }
     }
 
     @media (min-width: $desktop-width) {
+      background-image: url("../img/icon/back-desktop-inner.jpg");
       width: 1200px;
       height: 357px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/icon/back-desktop-inner@2x.jpg");
+      }
     }
   }
 
@@ -132,10 +160,37 @@
       bottom: 0;
     }
   }
+}
 
-  &--text-image-inner {
-    display: block;
-    margin: 0 auto;
+.page-header__text {
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+  width: 282px;
+  height: 214px;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 78px;
+    width: 460px;
+    height: 350px;
+  }
+
+  &--inner {
     padding-top: 108px;
+    width: 229px;
+    height: 39px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 151px;
+      width: 457px;
+      height: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 157px;
+      width: 460px;
+      height: 80px;
+    }
   }
 }

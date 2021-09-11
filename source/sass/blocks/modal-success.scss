@@ -1,24 +1,45 @@
 .modal-success {
-  padding-top: 30px;
-
+  position: absolute;
+  padding-top: 39px;
+  bottom: 356px;
+  background-color: $basic-white;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin: 0 60px;
+    width: 640px;
+    left: 50%;
+    margin-left: -320px;
+    bottom: 506px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 640px;
-    margin: 0 auto;
+  &--visible {
+    display: block;
+  }
+
+  &--invisible {
+    display: none;
   }
 }
 
 .modal-success__wrapper-button {
   padding: 20px;
   background-color: $basic-blue3;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 91px;
+  }
 }
 
 .modal-success__button {
+  margin-top: 17px;
+  font-size: 18px;
   padding-top: 18px;
   padding-bottom: 14px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 458px;
+    margin-top: 0;
+  }
 }

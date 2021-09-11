@@ -2,10 +2,11 @@
   @include reset-list();
   display: flex;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-right: 9px;
   }
 }
 
