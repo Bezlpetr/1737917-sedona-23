@@ -8,7 +8,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    padding: 0;
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      padding: 0 120px;
+    }
   }
 }
 
@@ -20,26 +26,29 @@
   text-transform: uppercase;
   text-align: center;
   color: $basic-black;
+  padding: 0 21px;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    padding: 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 300px;
+    margin-bottom: 31px;
   }
 
   &--inner {
     @media (min-width: $tablet-width) {
       font-size: 30px;
-      margin-bottom: 26px;
+      margin-bottom: 34px;
     }
   }
 
   br {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    br {
-      display: inline;
+    @media (min-width: $tablet-width) {
+      display: none;
     }
   }
 }

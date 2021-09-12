@@ -1,7 +1,7 @@
 .advantages-town__list {
   @include reset-list();
   text-align: left;
-  padding: 35px 20px;
+  padding: 36px 22px 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,15 +11,20 @@
 
 .advantages-town__item {
   margin-bottom: 26px;
-  padding-left: 50px;
+  padding-left: 47px;
+  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     position: relative;
     margin: 0;
-    padding: 158px 30px 80px;
+    padding: 158px 30px 60px;
     box-sizing: border-box;
     width: 33.3%;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 81px;
   }
 
   &--last-item {
@@ -45,6 +50,10 @@
     position: static;
     font-size: 21px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 
   &--house::before {
@@ -123,6 +132,10 @@
   line-height: 21px;
   color: $basic-gray;
 
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
+  }
+
   br {
     display: none;
 
@@ -132,6 +145,14 @@
 
     @media (min-width: $desktop-width) {
       display: none;
+    }
+  }
+}
+
+.advantages-town__description--burger {
+  br {
+    @media (min-width: $desktop-width) {
+      display: inline;
     }
   }
 }

@@ -5,6 +5,10 @@
 
 .modal__wrapper {
   @include center-wrapper();
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .modal__title {
@@ -15,6 +19,22 @@
   text-transform: uppercase;
   color: $basic-black;
   margin-bottom: 25px;
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 40px;
+      padding: 0 50px;
+    }
+  }
+
+  &--success {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      padding: 0 50px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .modal__text {
@@ -23,4 +43,22 @@
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 22px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &--success {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 41px;
+    }
+  }
 }

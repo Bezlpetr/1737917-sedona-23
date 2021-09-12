@@ -5,7 +5,11 @@
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 20px;
+    padding: 55px 20px 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 20px 66px;
   }
 }
 
@@ -20,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 33px;
   }
 }
 
@@ -31,16 +35,20 @@
   text-transform: uppercase;
   margin-bottom: 27px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+
   br {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: inline;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
   }
 }
 
