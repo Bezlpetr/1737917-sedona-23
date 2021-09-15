@@ -10,6 +10,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -183,8 +184,15 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__map">
-      <img class="page-footer__map-image" src="img/map/map-desktop.jpg" width="768" height="350"
-        alt="Карта расположения города Седона">
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+        <img class="page-footer__map-image" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x" width="1200" height="350"
+          alt="Карта расположения города Седона">
+      </picture>
     </div>
     <div class="page-footer__wrapper">
       <p class="page-footer__hashtag">
