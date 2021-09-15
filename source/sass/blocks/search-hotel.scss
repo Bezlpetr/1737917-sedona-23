@@ -53,9 +53,11 @@
 }
 
 .search-hotel__button {
+  display: block;
   padding-top: 14.5px;
   padding-bottom: 17.5px;
   width: 100%;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 458px;
