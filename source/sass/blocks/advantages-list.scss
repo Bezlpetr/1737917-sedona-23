@@ -36,6 +36,14 @@
     }
   }
 
+  &--text-only {
+    min-height: 167px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 256px;
+    }
+  }
+
   &--text-only:not(:last-child) {
     border-bottom: 1px solid $basic-light-gray-2;
   }
@@ -94,17 +102,17 @@
 .advantages-list__description--second {
   br {
     display: inline;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .advantages-list__description--four {
-  br {
-    display: inline;
-
-    &:first-child {
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
+  br:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      display: inline;
     }
   }
 }
