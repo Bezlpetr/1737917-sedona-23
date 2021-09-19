@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header page-header--catalog">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
@@ -51,159 +51,161 @@
       </svg>
     </div>
   </header>
-  <main class="page-main page-main__wrapper">
-    <h1 class="page-main__title page-main__title--inner">Фото и видео</h1>
-    <section class="gallery">
-      <h2 class="visually-hidden">
-        Фотографии города Седона и его окрестностей
-      </h2>
-      <p class="gallery__title">
-        Не можете решиться на путешествие из-за курса?<br />
-        Фотографии помогут вам забыть о политике и экономике.
-      </p>
-      <div class="gallery__list">
-        <figure class="gallery__item">
-          <div class="gallery__wrapper">
-            <a href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/catalog/road-desktop.webp 1x, img/catalog/road-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/catalog/road-tablet.webp 1x, img/catalog/road-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog/road-mobile.webp 1x, img/catalog/road-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/road-desktop.jpg 1x, img/catalog/road-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/road-tablet.jpg 1x, img/catalog/road-tablet@2x.jpg 2x">
-                <img class="gallery__image gallery__image--first" src="img/catalog/road-mobile.jpg"
-                  srcset="img/catalog/road-mobile@2x.jpg 2x" width="1200" height="400"
-                  alt="Шоссе, уходящее за горизонт" />
-              </picture>
-            </a>
-          </div>
-          <figcaption class="gallery__description">
-            <div class="gallery__wrapper gallery__wrapper--description">
-              <p class="gallery__name">Неродные просторы</p>
-              <p class="gallery__author">Автор фото: Борис</p>
-              <p class="gallery__likes">1350</p>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <div class="gallery__wrapper">
-            <a href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/catalog/plant-desktop.webp 1x, img/catalog/plant-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/catalog/plant-tablet.webp 1x, img/catalog/plant-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/catalog/plant-mobile.webp 1x, img/catalog/plant-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/plant-desktop.jpg 1x, img/catalog/plant-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/plant-tablet.jpg 1x, img/catalog/plant-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="img/catalog/plant-mobile.jpg"
-                  srcset="img/catalog/plant-mobile@2x.jpg 2x" width="400" height="267"
-                  alt="Кактус с желтыми цветочками" />
-              </picture>
-            </a>
-          </div>
-          <figcaption class="gallery__description">
-            <div class="gallery__wrapper gallery__wrapper--description">
-              <p class="gallery__name">Местная растительность</p>
-              <p class="gallery__author">Автор фото: Сергей</p>
-              <p class="gallery__likes">143</p>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <div class="gallery__wrapper">
-            <a href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/catalog/lacet-desktop.webp 1x, img/catalog/lacet-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/catalog/lacet-tablet.webp 1x, img/catalog/lacet-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/catalog/lacet-mobile.webp 1x, img/catalog/lacet-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/lacet-desktop.jpg 1x, img/catalog/lacet-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/lacet-tablet.jpg 1x, img/catalog/lacet-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="img/catalog/lacet-mobile.jpg"
-                  srcset="img/catalog/lacet-mobile@2x.jpg 2x" width="400" height="267"
-                  alt="Дорога-серпантин в горах, заросших деревьями" />
-              </picture>
-            </a>
-          </div>
-          <figcaption class="gallery__description">
-            <div class="gallery__wrapper gallery__wrapper--description">
-              <p class="gallery__name">Дорога на север</p>
-              <p class="gallery__author">Автор фото: Петр</p>
-              <p class="gallery__likes">96</p>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <div class="gallery__wrapper">
-            <a href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/catalog/bridge-desktop.webp 1x, img/catalog/bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/catalog/bridge-tablet.webp 1x, img/catalog/bridge-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/catalog/bridge-mobile.webp 1x, img/catalog/bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/bridge-desktop.jpg 1x, img/catalog/bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/bridge-tablet.jpg 1x, img/catalog/bridge-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="img/catalog/bridge-mobile.jpg"
-                  srcset="img/catalog/bridge-mobile@2x.jpg 2x" width="400" height="267" alt="Мост дьявола" />
-              </picture>
-            </a>
-          </div>
-          <figcaption class="gallery__description">
-            <div class="gallery__wrapper gallery__wrapper--description">
-              <p class="gallery__name">Мост дьявола</p>
-              <p class="gallery__author">Автор фото: Антон</p>
-              <p class="gallery__likes">254</p>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="presentation">
-      <div class="presentation__wrapper">
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <h1 class="page-main__title page-main__title--inner">Фото и видео</h1>
+      <section class="gallery">
         <h2 class="visually-hidden">
-          Видеопрезентация о городе Седона и его окрестностях
+          Фотографии города Седона и его окрестностей
         </h2>
-        <p class="presentation__question">Все еще сомневаетесь?</p>
-        <p class="presentation__text">
-          Смотрите видеопрезентацию и скорее за билетами, пока они<br />
-          не подорожали в очередной раз!
+        <p class="gallery__title">
+          Не можете решиться на путешествие из-за курса?<br />
+          Фотографии помогут вам забыть о политике и экономике.
         </p>
-      </div>
-      <video class="video" width="800" height="500" poster="img/catalog/presentation.jpg" preload="none">
-        <source src="img/catalog/presentation.jpg" />
-      </video>
-      <div class="video__control">
-        <div class="video__time-line">
-          <div class="video__scale"></div>
-          <div class="video__toggle"></div>
+        <div class="gallery__list">
+          <figure class="gallery__item">
+            <div class="gallery__wrapper">
+              <a class="gallery__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/road-desktop.webp 1x, img/catalog/road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/road-tablet.webp 1x, img/catalog/road-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/road-mobile.webp 1x, img/catalog/road-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/road-desktop.jpg 1x, img/catalog/road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/road-tablet.jpg 1x, img/catalog/road-tablet@2x.jpg 2x">
+                  <img class="gallery__image gallery__image--first" src="img/catalog/road-mobile.jpg"
+                    srcset="img/catalog/road-mobile@2x.jpg 2x" width="1200" height="400"
+                    alt="Шоссе, уходящее за горизонт" />
+                </picture>
+              </a>
+            </div>
+            <figcaption class="gallery__description">
+              <div class="gallery__wrapper gallery__wrapper--description">
+                <p class="gallery__name">Неродные просторы</p>
+                <p class="gallery__author">Автор фото: Борис</p>
+                <p class="gallery__likes">1350</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__wrapper">
+              <a class="gallery__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/plant-desktop.webp 1x, img/catalog/plant-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/plant-tablet.webp 1x, img/catalog/plant-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/plant-mobile.webp 1x, img/catalog/plant-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/plant-desktop.jpg 1x, img/catalog/plant-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/plant-tablet.jpg 1x, img/catalog/plant-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/catalog/plant-mobile.jpg"
+                    srcset="img/catalog/plant-mobile@2x.jpg 2x" width="400" height="267"
+                    alt="Кактус с желтыми цветочками" />
+                </picture>
+              </a>
+            </div>
+            <figcaption class="gallery__description">
+              <div class="gallery__wrapper gallery__wrapper--description">
+                <p class="gallery__name">Местная растительность</p>
+                <p class="gallery__author">Автор фото: Сергей</p>
+                <p class="gallery__likes">143</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__wrapper">
+              <a class="gallery__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/lacet-desktop.webp 1x, img/catalog/lacet-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/lacet-tablet.webp 1x, img/catalog/lacet-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/lacet-mobile.webp 1x, img/catalog/lacet-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/lacet-desktop.jpg 1x, img/catalog/lacet-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/lacet-tablet.jpg 1x, img/catalog/lacet-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/catalog/lacet-mobile.jpg"
+                    srcset="img/catalog/lacet-mobile@2x.jpg 2x" width="400" height="267"
+                    alt="Дорога-серпантин в горах, заросших деревьями" />
+                </picture>
+              </a>
+            </div>
+            <figcaption class="gallery__description">
+              <div class="gallery__wrapper gallery__wrapper--description">
+                <p class="gallery__name">Дорога на север</p>
+                <p class="gallery__author">Автор фото: Петр</p>
+                <p class="gallery__likes">96</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__wrapper">
+              <a class="gallery__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/bridge-desktop.webp 1x, img/catalog/bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/bridge-tablet.webp 1x, img/catalog/bridge-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/bridge-mobile.webp 1x, img/catalog/bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/bridge-desktop.jpg 1x, img/catalog/bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/bridge-tablet.jpg 1x, img/catalog/bridge-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/catalog/bridge-mobile.jpg"
+                    srcset="img/catalog/bridge-mobile@2x.jpg 2x" width="400" height="267" alt="Мост дьявола" />
+                </picture>
+              </a>
+            </div>
+            <figcaption class="gallery__description">
+              <div class="gallery__wrapper gallery__wrapper--description">
+                <p class="gallery__name">Мост дьявола</p>
+                <p class="gallery__author">Автор фото: Антон</p>
+                <p class="gallery__likes">254</p>
+              </div>
+            </figcaption>
+          </figure>
         </div>
-        <button class="video__button-repeat" type="button">
-          <span class="visually-hidden">Начать воспроизведение сначала</span>
-        </button>
-        <button class="video__button-closed-captions" type="button">
-          <span class="visually-hidden">Скрытые субтитры</span>
-        </button>
-        <button class="video__button-full-screen" type="button">
-          <span class="visually-hidden">Полноэкранный режим</span>
-        </button>
-      </div>
-    </section>
+      </section>
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="visually-hidden">
+            Видеопрезентация о городе Седона и его окрестностях
+          </h2>
+          <p class="video__header">Все еще сомневаетесь?</p>
+          <p class="video__description">
+            Смотрите видеопрезентацию и скорее за билетами, пока они<br />
+            не подорожали в очередной раз!
+          </p>
+        </div>
+        <video class="video__player" width="800" height="500" poster="img/catalog/presentation.jpg" preload="none">
+          <source src="img/catalog/presentation.jpg" />
+        </video>
+        <div class="video__control">
+          <div class="video__time-line">
+            <div class="video__scale"></div>
+            <div class="video__toggle"></div>
+          </div>
+          <button class="video__button-repeat" type="button">
+            <span class="visually-hidden">Начать воспроизведение сначала</span>
+          </button>
+          <button class="video__button-closed-captions" type="button">
+            <span class="visually-hidden">Скрытые субтитры</span>
+          </button>
+          <button class="video__button-full-screen" type="button">
+            <span class="visually-hidden">Полноэкранный режим</span>
+          </button>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

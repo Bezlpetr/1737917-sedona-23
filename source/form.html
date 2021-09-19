@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header page-header--form">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
@@ -186,8 +186,9 @@
           <fieldset class="response__fieldset">
             <legend class="response__legend">Опишите свои эмоции:</legend>
             <div class="response__wrapper response__wrapper--fifth-item">
-              <textarea class="response__textarea" name="emotion" cols="25" rows="5"
+              <textarea class="response__textarea" id="textarea-emotion" name="emotion" cols="25" rows="5"
                 placeholder="Опишите подробно все свои восторги"></textarea>
+              <label class="visually-hidden" for="textarea-emotion">Опишите свои эмоции</label>
             </div>
           </fieldset>
           <button class="response__button button" type="submit">
@@ -240,7 +241,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal-failure modal modal-failure--invisible">
+  <div class="modal modal--failure modal--invisible">
     <h2 class="visually-hidden">Сообщение об ошибке</h2>
     <div class="modal__wrapper">
       <p class="modal__title modal__title--failure">Что-то пошло не так!</p>
@@ -248,10 +249,10 @@
         Проверьте поля, выделенные красным, скорее всего вы забыли их
         заполнить
       </p>
-      <button class="modal-failure__button button" type="button">ОК</button>
+      <button class="button button--failure" type="button">ОК</button>
     </div>
   </div>
-  <div class="modal-success modal modal-success--invisible">
+  <div class="modal modal--success modal--invisible">
     <div class="modal__wrapper">
       <h2 class="visually-hidden">Сообщение об успешной отправке отзыва</h2>
       <p class="modal__title modal__title--success">Ваш отзыв отправлен!</p>
@@ -260,8 +261,8 @@
         В ближайшее время мы опубликуем его на сайте.
       </p>
     </div>
-    <div class="modal-success__wrapper-button">
-      <button class="modal-success__button button" type="button">
+    <div class="modal__wrapper-button">
+      <button class="button button--success" type="button">
         Закрыть окно
       </button>
     </div>

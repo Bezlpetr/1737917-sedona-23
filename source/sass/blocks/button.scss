@@ -10,6 +10,29 @@
   border: none;
   cursor: pointer;
   margin: 0 auto;
+  outline: 0;
+
+  &--success {
+    margin-top: 17px;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      width: 458px;
+      margin-top: 0;
+    }
+  }
+
+  &--failure {
+    padding: 18px 76px 14px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 272px;
+    }
+  }
 
   &:hover,
   &:focus {

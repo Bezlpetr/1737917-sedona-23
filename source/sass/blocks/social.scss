@@ -18,6 +18,7 @@
   margin-right: 6px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: 36px 6px 36px 0;
@@ -41,6 +42,20 @@
   }
 }
 
+.social__link {
+  text-decoration: none;
+  outline: none;
+}
+
 .social__link:active .social__icon {
   opacity: 0.3;
+}
+
+.social__link:hover,
+.social__link:focus-within {
+  background-color: $basic-dark-blue;
+}
+
+.social__link:active {
+  background-color: $basic-dark-blue2;
 }
